@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="refresh" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Radio+Canada:wght@600&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Daftar Anggota Super Star</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #00000f;
+      height: 100%;
+      color: white;
+    }
+
+    .logo {
+      font-family: "Poppins", Sans-Serif;
+      text-align: center;
+      margin-top: 5%;
+      font-size: 28px;
+    }
+
+    .logo span {
+      color: #f4c530;
+      font-size: 20px;
+    }
+
+    .navbarhome button {
+      width: 100px;
+      height: 35px;
+      border: none;
+      outline: none;
+      background-color: #f4c530;
+      color: ghostwhite;
+      border-radius: 17px;
+      transition: 0.3s all ease-in-out;
+      font-size: 18px;
+      font-family: "Radio Canada", Sans-Serif;
+      box-shadow: 0 0 35px grey;
+    }
+
+    .navbarhome button:hover {
+      transition: 0.3s all ease-in-out;
+      background: ghostwhite;
+      color: #f4c530;
+    }
+
+    .navbarhome {
+      margin-top: 10%;
+      margin-left: 15%;
+    }
+
+    .navbarlogout button {
+      width: 100px;
+      height: 35px;
+      border: none;
+      outline: none;
+      background-color: #f4c530;
+      color: ghostwhite;
+      border-radius: 17px;
+      transition: 0.3s all ease-in-out;
+      font-size: 18px;
+      font-family: "Radio Canada", Sans-Serif;
+      box-shadow: 0 0 35px grey;
+    }
+
+    .navbarlogout button:hover {
+      transition: 0.3s all ease-in-out;
+      background-color: ghostwhite;
+      color: #f4c530;
+    }
+
+    .navbarlogout {
+      margin-left: 55%;
+      margin-top: -9.8%;
+    }
+
+    *,
+    *:before,
+    *:after {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .deskripsi {
+      font-family: "Poppins", Sans-Serif;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .deskripsi span {
+      font-size: 24px;
+      font-family: "Ubuntu", Sans-Serif;
+      color: #f4c530;
+    }
+
+    .old-coach {
+      text-align: center;
+      color: ghostwhite;
+      font-family: "Radio Canada", Sans-Serif;
+    }
+
+    .old-coach span {
+      color: #f4c530;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      font-size: 24px;
+    }
+    .old-coach p {
+      margin-top: -17px;
+    }
+
+    .img-old-coach img {
+      width: 200px;
+      border-radius: 20px 20px 0 0;
+      margin-left: 21%;
+      margin-top: 7%;
+      box-shadow: 0 0 90px white;
+      transition: 0.9s all ease-in-out;
+    }
+
+    .img-old-coach img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      width: 200px;
+      border-radius: 20px;
+    }
+
+    .img-old-coach p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 21%;
+      margin-top: -4px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 200px;
+      height: 25px;
+    }
+
+    .img-new-coach img {
+      width: 200px;
+      border-radius: 20px 20px 0 0;
+      margin-left: 22%;
+      margin-top: 7%;
+      box-shadow: 0 0 90px white;
+      height: 205px;
+      transition: 0.9s all ease-in-out;
+    }
+
+    .img-new-coach img:hover {
+      transition: 0.9s all ease-in-out;
+      transform: scale(1.7);
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+    }
+
+    .img-new-coach p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 22%;
+      margin-top: -4px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 200px;
+      height: 25px;
+    }
+
+    .deskripsi2 {
+      font-family: "Poppins", Sans-Serif;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .deskripsi2 span {
+      font-size: 24px;
+      font-family: "Ubuntu", Sans-Serif;
+      color: #f4c530;
+    }
+
+    .new-coach {
+      text-align: center;
+      color: ghostwhite;
+      font-family: "Radio Canada", Sans-Serif;
+      margin-top: 10%;
+    }
+
+    .new-coach span {
+      color: #f4c530;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      font-size: 24px;
+    }
+    .new-coach p {
+      margin-top: -17px;
+    }
+
+    .asisten1 h3 {
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 15%;
+      margin-top: 50px;
+      color: #f4c530;
+    }
+
+    .asisten1 span {
+      color: #f4c530;
+    }
+
+    .asisten2 {
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 65%;
+      margin-top: -41px;
+    }
+
+    .asisten2 h3 {
+      color: #f4c530;
+    }
+
+    .img-new-asisten1 img {
+      width: 150px;
+      height: 230px;
+      border-radius: 20px 20px 0 0;
+      margin-left: 12px;
+      box-shadow: 0 0 30px white;
+      display: flex;
+      transition: 0.9s all ease-in-out;
+    }
+
+    .img-new-asisten1 img:hover {
+      transition: 0.9s all ease-in-out;
+      transform: scale(1.7);
+      width: 150px;
+      margin-left: 28%;
+      border-radius: 20px;
+    }
+
+    .img-new-asisten2 img:hover {
+      transition: 0.9s all ease-in-out;
+      transform: scale(1.7);
+      width: 150px;
+      margin-left: 28%;
+      border-radius: 20px;
+    }
+
+    .img-new-asisten1 p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 3.5%;
+      margin-top: -0.5px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 150px;
+      height: 25px;
+    }
+
+    .img-new-asisten2 img {
+      width: 150px;
+      height: 230px;
+      border-radius: 20px 20px 0 0;
+      margin-left: 190px;
+      margin-top: -76.5%;
+      box-shadow: 0 0 30px white;
+      display: flex;
+      transition: 0.9s all ease-in-out;
+    }
+
+    .img-new-asisten2 p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 54%;
+      margin-top: -0.5px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 150px;
+      height: 25px;
+    }
+
+    .anggota {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      color: #f4c530;
+      font-size: 24px;
+      margin-top: 20%;
+    }
+
+    .fiona img {
+      width: 140px;
+      margin-left: 25px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: 25%;
+    }
+
+    .fiona img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .fiona p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .clarita img {
+      width: 140px;
+      margin-left: 186px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      margin-top: -37.5%;
+      display: flex;
+    }
+
+    .clarita img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .clarita p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 52.6%;
+      margin-top: -2px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .nicky img {
+      width: 140px;
+      margin-left: 25px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: 6%;
+    }
+
+    .nicky img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .nicky p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .veni img {
+      width: 140px;
+      margin-left: 186px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      margin-top: -71%;
+      display: flex;
+    }
+
+    .veni img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .veni p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 52.6%;
+      margin-top: -2px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .jessica img {
+      width: 140px;
+      margin-left: 186px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      margin-top: 6%;
+      display: flex;
+    }
+
+    .jessica img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .jessica p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 52.6%;
+      margin-top: -2px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .chelsea img {
+      width: 140px;
+      margin-left: 25px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: -37%;
+    }
+
+    .chelsea img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .chelsea p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .kesya img {
+      width: 140px;
+      margin-left: 25px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: 32px;
+    }
+
+    .kesya img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .kesya p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .ofiyanti img {
+      width: 140px;
+      margin-left: 183px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: -118px;
+    }
+
+    .ofiyanti img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .ofiyanti p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 51.5%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .sinta img {
+      width: 140px;
+      margin-left: 25px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: 23px;
+    }
+
+    .sinta img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .sinta p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .mudra img {
+      width: 140px;
+      margin-left: 183px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: -249px;
+    }
+
+    .mudra img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .mudra p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 51.6%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .floren img {
+      width: 140px;
+      margin-left: 183px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: 32px;
+    }
+
+    .floren img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .floren p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 51.6%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .dewaty img {
+      width: 140px;
+      margin-left: 26px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: 28px;
+    }
+
+    .dewaty img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .dewaty p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7.1%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .harizallim img {
+      width: 140px;
+      margin-left: 186px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      margin-top: -35%;
+      display: flex;
+    }
+
+    .harizallim img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .harizallim p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 52.6%;
+      margin-top: -2px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .ferdy img {
+      width: 140px;
+      margin-left: 26px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: -148px;
+    }
+
+    .ferdy img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .ferdy p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7.1%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .mila img {
+      width: 140px;
+      margin-left: 26px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      margin-top: 24px;
+      display: flex;
+    }
+
+    .mila img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .mila p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 26px;
+      margin-top: -2px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .jennyfer img {
+      width: 140px;
+      margin-left: 210px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: -64%;
+    }
+
+    .jennyfer img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .jennyfer p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 53.6%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .diana img {
+      width: 140px;
+      margin-left: 190px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: 33px;
+    }
+
+    .diana img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .diana p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 53.6%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .willy img {
+      width: 140px;
+      margin-left: 26px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      margin-top: -17px;
+    }
+
+    .willy img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .willy p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 7.1%;
+      margin-top: -1px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+
+    .julia img {
+      width: 140px;
+      margin-left: 186px;
+      border-radius: 20px 20px 0 0;
+      transition: 0.3s all ease-in-out;
+      margin-top: -26%;
+      display: flex;
+    }
+
+    .julia img:hover {
+      transform: scale(1.7);
+      transition: 0.9s all ease-in-out;
+      margin-left: 30%;
+      border-radius: 20px;
+    }
+
+    .julia p {
+      text-align: center;
+      font-family: "Edu Tas Beginner", Sans-Serif;
+      margin-left: 52.6%;
+      margin-top: -2px;
+      border-radius: 0 0 20px 20px;
+      background-color: #6c3428;
+      color: #fff2d8;
+      width: 141px;
+      height: 25px;
+    }
+    
+  </style>
+
+  <body translate="no">
+    <div class="logo">Super<span>Star</span></div>
+
+    <div class="navbarhome">
+      <a href="/home.html"><button type="submit">Home</button></a>
+    </div>
+
+    <div class="navbarlogout">
+      <a href="/login.html"><button type="submit">LOG OUT</button></a>
+    </div>
+
+    <div class="deskripsi">
+      Daftar Anggota dan Coach <br />
+      <span>Super Star</span>
+    </div>
+
+    <div class="old-coach">
+      <h2><span>C</span>O<span>A</span>C<span>H</span></h2>
+      <p><span>2</span>0<span>2</span>2 - <span>2</span>0<span>2</span>3</p>
+    </div>
+
+    <div class="img-old-coach">
+      <img src="fergo.jpg" alt="" />
+      <p>Fergo</p>
+    </div>
+
+    <div class="new-coach">
+      <h2>
+        <span>N</span>e<span>w</span> <span>C</span>O<span>A</span>C<span
+          >H</span
+        >
+      </h2>
+      <p><span>2</span>0<span>2</span>3 - <span>2</span>0<span>2</span>4</p>
+    </div>
+
+    <div class="img-new-coach">
+      <img src="oktaviana.jpg" alt="" />
+      <p>Oktaviana</p>
+    </div>
+
+    <div class="asisten1" data-aos="fade-right">
+      <h3>Asisten 1</h3>
+    </div>
+
+    <div class="asisten2" data-aos="fade-left">
+      <h3>Asisten 2</h3>
+    </div>
+
+    <div class="img-new-asisten1" data-aos="fade-up">
+      <img src="ceciliya.jpg" alt="" />
+      <p>Ceciliya</p>
+    </div>
+
+    <div class="img-new-asisten2" data-aos="fade-up">
+      <img src="devingel.jpg" alt="" />
+      <p>Devingel</p>
+    </div>
+
+    <div class="anggota" data-aos="fade-up">
+      <h2>Anggota-Anggota</h2>
+    </div>
+
+<div class="foto">
+
+
+    <div class="fiona" data-aos="fade-up">
+      <img src="fiona.jpg" alt="" />
+      <p>Fiona</p>
+    </div>
+
+    <div class="clarita" data-aos="fade-up">
+      <img src="clarita.jpg" alt="" />
+      <p>Clarita</p>
+    </div>
+
+    <div class="nicky" data-aos="fade-right">
+      <img src="nicky.jpg" alt="" />
+      <p>Nicky</p>
+    </div>
+
+    <div class="veni" data-aos="fade-down">
+      <img src="veni.jpg" alt="" />
+      <p>Veni</p>
+    </div>
+
+    <div class="jessica" data-aos="fade-left">
+      <img src="jessica.jpg" alt="" />
+      <p>Jessica</p>
+    </div>
+
+    <div class="chelsea" data-aos="fade-left">
+      <img src="chelsea.jpg" alt="" />
+      <p>Chelsea</p>
+    </div>
+
+    <div class="kesya" data-aos="fade-right">
+      <img src="kesya.jpg" alt="" />
+      <p>Kesya</p>
+    </div>
+
+    <div class="ofiyanti" data-aos="fade-up">
+      <img src="ofiyanti.jpg" alt="" />
+      <p>Ofiyanti</p>
+    </div>
+
+    <div class="sinta" data-aos="fade-right">
+      <img src="sinta.jpg" alt="" />
+      <p>Gosinta</p>
+    </div>
+
+    <div class="mudra" data-aos="fade-up">
+      <img src="mudra.jpg" alt="" />
+      <p>Mudra</p>
+    </div>
+
+    <div class="floren" data-aos="fade-left">
+      <img src="floren.jpg" alt="" />
+      <p>Floren</p>
+    </div>
+
+    <div class="dewaty" data-aos="fade-right">
+      <img src="dewaty.jpg" alt="" />
+      <p>Dewaty</p>
+    </div>
+
+    <div class="harizallim" data-aos="fade-left">
+      <img src="harizallim.jpg" alt="" />
+      <p>Harizallim</p>
+    </div>
+
+    <div class="ferdy" data-aos="fade-right">
+      <img src="ferdy.jpg" alt="" />
+      <p>Ferdy</p>
+    </div>
+
+    <div class="mila" data-aos="fade-up">
+      <img src="mila.jpg" alt="" />
+      <p>Mila</p>
+    </div>
+
+    <div class="jennyfer" data-aos="fade-left">
+      <img src="Jennyfer.jpg" alt="" />
+      <p>Jennyfer</p>
+    </div>
+
+    <div class="diana" data-aos="fade-up">
+      <img src="diana.jpg" alt="" />
+      <p>Diana</p>
+    </div>
+
+    <div class="willy" data-aos="fade-right">
+      <img src="willy.jpg" alt="" />
+      <p>Willy</p>
+    </div>
+
+    <div class="julia" data-aos="fade-left">
+      <img src="julia.jpg" alt="" />
+      <p>Julia</p>
+    </div>
+    
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

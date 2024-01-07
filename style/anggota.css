@@ -1,0 +1,209 @@
+.nav-link {
+  color: #f4c530 !important;
+  font-family: "Nunito", sans-serif !important;
+}
+
+.nav-item {
+  text-align: center !important;
+}
+
+.navbar-brand {
+  color: #f4c530 !important;
+  font-weight: 900 !important;
+  margin-top: -1.5% !important;
+  font-size: 30px !important;
+  font-family: "Ubuntu", sans-serif !important;
+  letter-spacing: 1.5px !important;
+  margin-left: 5% !important;
+}
+
+.navbar-collapse {
+  margin-left: 66% !important;
+  margin-top: -5px !important;
+}
+
+.navbar-collapse .nav-link {
+  padding: 30px !important;
+  font-size: 17px !important;
+}
+
+.navbar-toggler {
+  background-color: whitesmoke !important;
+}
+
+.fergo-body {
+  margin-top: 5% !important;
+  margin-left: 16% !important;
+}
+
+.fergo-body img {
+  border-radius: 5px !important;
+}
+
+.fergo-btn {
+  z-index: 9999 !important;
+  margin-top: 5px !important;
+  background-color: transparent !important;
+  border: 2px solid #f4c530 !important;
+}
+
+.fergo-header {
+  margin-left: 17% !important;
+}
+
+.fergo-text {
+  width: 50%;
+  margin-left: 15%;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.coach {
+  width: 230px;
+  border: 3px solid #f4c530;
+  border-radius: 25px !important;
+  box-shadow: 0 0 5px white !important;
+}
+
+.asisten {
+  width: 230px;
+  border: 3px solid #f4c530;
+  border-radius: 15px !important;
+  margin-top: 90px !important;
+  box-shadow: 0 0 5px white !important;
+}
+
+.img-fergo img {
+  margin-top: 10px !important;
+}
+
+.img-liwe img {
+  margin-top: 10px !important;
+}
+
+.img-vingel img {
+  margin-top: 62px !important;
+}
+
+.img-acen img {
+  margin-top: 90px !important;
+}
+
+.toggle-fergo-liwe {
+  position: absolute !important;
+  margin-top: 10px;
+}
+
+.btn-fergo-liwe {
+  background-color: transparent !important;
+  border: 3px solid #f4c530 !important;
+  font-size: 15px !important;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.btn-fergo-liwe:hover {
+  background-color: #f4c530 !important;
+  font-weight: 700 !important;
+  border: 3px solid white !important;
+}
+
+.text-fergo-liwe {
+  margin-top: 80px !important;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.crd-fergo {
+  font-size: 12px !important;
+}
+
+.crd-liwe {
+  font-size: 12px !important;
+}
+
+.btn-fergo-liwe-ig {
+  background-color: transparent !important;
+  border: 3px solid #f4c530 !important;
+  font-weight: 600 !important;
+}
+
+.btn-anggota-ig {
+  background-color: transparent !important;
+  border: 3px solid #f4c530 !important;
+  font-weight: 600 !important;
+  color: black !important;
+  width: 140px;
+  margin-left: -7px !important;
+}
+
+.toggle-acen {
+  position: absolute !important;
+}
+
+.btn-acen {
+  margin-top: 10px !important;
+  background-color: transparent !important;
+  border: 3px solid #f4c530 !important;
+  font-size: 15px !important;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.text-acen {
+  margin-top: 80px !important;
+  font-size: 12px !important;
+  font-family: "Ubuntu", sans-serif !important;
+  border: 5px solid #f4c530 !important;
+}
+
+.asisten-text {
+  color: #f4c530;
+}
+
+.anggota-body {
+  font-size: 10px !important;
+  font-family: "Ubuntu", sans-serif !important;
+  text-align: center !important;
+}
+
+.anggota-text {
+  color: #f4c530 !important;
+  font-weight: 600 !important;
+}
+
+.anggota-full {
+  margin-top: 70px !important;
+  margin-left: -79px !important;
+  font-family: "Ubuntu", sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.header-anggota {
+  padding: 23px !important;
+}
+
+.anggota-full-2 {
+  margin-top: -90px !important;
+  font-size: 10px !important;
+}
+
+.card-anggota {
+  border: 3px solid #f4c530 !important;
+  box-shadow: 0 0 6px grey;
+}
+
+.btn-anggota-ig:hover {
+  background-color: #f4c530 !important;
+  border: 3px solid #00000f !important;
+}
+
+.btn-fergo-liwe-ig:hover {
+  background-color: #f4c530 !important;
+  border: 3px solid #00000f !important;
+}
+
+footer {
+    font-family: 'Ubuntu', sans-serif !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+}
+
+

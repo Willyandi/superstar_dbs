@@ -1,0 +1,154 @@
+.nav-link {
+  color: white !important;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.navbar-brand {
+  color: #f4c530 !important;
+  font-weight: 900 !important;
+  margin-top: -1.5% !important;
+  font-size: 30px !important;
+  font-family: "Ubuntu", sans-serif !important;
+  letter-spacing: 1.5px !important;
+  margin-left: 5% !important;
+}
+
+.navbar-collapse {
+  margin-left: 17% !important;
+  margin-top: -1.5% !important;
+}
+
+.nav-link {
+  padding: 30px !important;
+  font-size: 17px !important;
+}
+
+.carousel-inner {
+  width: 80% !important;
+  height: 100;
+  margin-left: 10.2% !important;
+  margin-top: 25px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 10px white !important;
+}
+
+.btn-outline-warning {
+  outline: #f4c530 !important;
+  border: 3px solid #f4c530 !important;
+  font-family: "Ubuntu", sans-serif !important;
+  color: white !important;
+  margin-top: 0% !important;
+}
+
+.navbar-toggler {
+  background-color: whitesmoke !important;
+}
+
+.card {
+  width: 70% !important;
+  text-align: center !important;
+  margin-top: 5% !important;
+}
+
+.card-body {
+  font-size: 14px !important;
+}
+
+.card-header {
+  font-family: "Ubuntu", sans-serif !important;
+  color: #f4c530 !important;
+  font-weight: 900 !important;
+}
+
+.card-title {
+  color: #f4c530 !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+}
+
+.card-text {
+  color: grey !important;
+  font-family: "Nunito", sans-serif !important;
+}
+
+.card-info {
+  border: 3px solid #f4c530 !important;
+  box-shadow: 0 0 20px grey !important;
+}
+
+.card-info2 {
+  border: 3px solid #f4c530 !important;
+  box-shadow: 0 0 20px grey !important;
+}
+
+.card-header-1 {
+  color: white !important;
+}
+
+.card-angkatan-23 {
+  background-color: #f4c530 !important;
+  border: 1.5px solid white !important;
+  box-shadow: 0 0 10px grey !important;
+}
+
+.table-1 {
+  width: 79% !important;
+  font-size: 12px !important;
+  margin-top: 5% !important;
+  text-align: center !important;
+}
+
+.table-2 {
+  width: 79% !important;
+  font-size: 12px !important;
+  margin-top: 3% !important;
+  text-align: center !important;
+}
+
+.table-group-divider {
+  font-family: "Ubuntu", sans-serif !important;
+  text-align: center !important;
+  font-weight: 900;
+}
+
+tr, th, td {
+    background-color: grey !important;
+    outline: none !important;
+}
+
+.btn-1 {
+  width: 75px !important;
+  height: 30px;
+  font-size: 8px !important;
+  color: #f4c530 !important;
+  border: 3px solid #f4c530 !important;
+  text-align: center !important;
+  font-weight: 900 !important;
+}
+
+.card-angkatan-24 {
+    margin-top: -1px !important;
+    background-color: #f4c530 !important;
+    border: 1.5px solid white !important;
+    box-shadow: 0 0 10px grey !important;
+}
+
+.card-header-2 {
+    color: white !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    font-family: 'Ubuntu', sans-serif !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+}
+
+.A-F {
+    margin-top: 20px !important;
+}
